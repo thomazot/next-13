@@ -1,31 +1,20 @@
-import { SizeEnum } from "@/types";
 import classNames from "classnames";
-import React, { ComponentType } from "react";
+import React from "react";
 
 type TitleProps = {
     children?: React.ReactNode
-    size?: SizeEnum
+    size?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'h7'
 } & React.HTMLAttributes<HTMLTitleElement>
 
-const DICTIONARY = {
-    'XXL': 'h1',
-    'XL': 'h2',
-    'LG': 'h3',
-    'MD': 'h4',
-    'SM': 'h5',
-    'XS': 'h6',
-    'XXS': 'h7'
-}
-
 const DICTIONARY_SIZE = {
-    'XXL': 'text-3xl',
-    'XL': 'text-2xl',
-    'LG': 'text-xl',
-    'MD': 'text-lg',
-    'SM': 'text-base',
-    'XS': 'text-sm',
-    'XXS': 'text-xs'
+    'h1': 'text-3xl',
+    'h2': 'text-2xl',
+    'h3': 'text-xl',
+    'h4': 'text-lg',
+    'h5': 'text-base',
+    'h6': 'text-sm',
+    'h7': 'text-xs'
 }
 
-export const Title: React.FC<TitleProps> = ({ children, size=SizeEnum.XXL, ...otherAttributes }) => 
-    React.createElement(DICTIONARY[size], {...otherAttributes, className: classNames('font-bold', DICTIONARY_SIZE[size]) }, [children])
+export const Title: React.FC<TitleProps> = ({ children, size='h1', className, ...otherAttributes }) => 
+    React.createElement(size, {...otherAttributes, className: classNames('font-bold', DICTIONARY_SIZE[size], className) }, [children])
