@@ -5,7 +5,7 @@ import { SizeEnum } from "@/types";
 import classNames from "classnames";
 
 type LogoProps = {
-    size: SizeEnum
+    size?: SizeEnum
 }
 
 const DICTIONARY = {
@@ -18,4 +18,4 @@ const DICTIONARY = {
     'XXS': 'h-7'
 }
 
-export const Logo: React.FC<LogoProps> = ({ size=SizeEnum.MD }) => <IconLogo className={classNames(DICTIONARY[size], 'w-auto')} />
+export const Logo: React.FC<LogoProps> = ({ size=SizeEnum.MD }) => <IconLogo className={classNames(DICTIONARY[size], 'w-auto', 'max-h-full')} />
