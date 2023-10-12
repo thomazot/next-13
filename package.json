@@ -40,6 +40,7 @@
     "@testing-library/react": "^14.0.0",
     "cypress": "^13.1.0",
     "eslint-plugin-storybook": "^0.6.13",
-    "storybook": "^7.4.0"
+    "storybook": "^7.4.0",
+    "storybook-addon-css-user-preferences": "^0.0.3"
   }
 }
