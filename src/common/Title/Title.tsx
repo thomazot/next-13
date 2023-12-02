@@ -7,13 +7,13 @@ type TitleProps = {
 } & React.HTMLAttributes<HTMLTitleElement>
 
 const DICTIONARY_SIZE = {
-    'h1': 'text-3xl',
-    'h2': 'text-2xl',
-    'h3': 'text-xl',
-    'h4': 'text-lg',
-    'h5': 'text-base',
-    'h6': 'text-sm',
-    'h7': 'text-xs'
+    'h1': 'text-7xl',
+    'h2': 'text-6xl',
+    'h3': 'text-5xl',
+    'h4': 'text-4xl',
+    'h5': 'text-3xl',
+    'h6': 'text-2xl',
+    'h7': 'text-1xl'
 }
 
 export const Title: React.FC<TitleProps> = ({ children, size='h1', className, ...otherAttributes }) => 
