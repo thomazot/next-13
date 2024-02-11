@@ -24,9 +24,9 @@ export const Disabled: Story = {args: { label: 'Username', disabled: true }};
 
 export const Error: Story = {args: { label: 'Username', error: { message: 'Error message' } as FieldError}}
 
-export const Icon: Story = {args: { label: 'Username', icon: <BiSearch className='fill-current' />}}
+export const Icon: Story = {args: { label: 'Username', icon: <BiSearch className='fill-primary' />}}
 
-export const IconLeft: Story = {args: { label: 'Username', icon: <BiSearch className='fill-current' />, iconPosition: 'left'}}
+export const IconLeft: Story = {args: { label: 'Username', icon: <BiSearch className='fill-primary' />, iconPosition: 'left'}}
 
 export const Loading: Story = {args: { label: 'Username', loading: true}}
 

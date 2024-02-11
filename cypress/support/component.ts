@@ -14,7 +14,9 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
+import 'cypress-forced-colors';
 import './commands'
+import '../../src/app/globals.css'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

@@ -20,7 +20,7 @@
     "eslint": "8.48.0",
     "eslint-config-next": "latest",
     "lucide-react": "^0.274.0",
-    "next": "latest",
+    "next": "^14.0.3",
     "postcss": "8.4.29",
     "react": "latest",
     "react-dom": "latest",
@@ -31,6 +31,7 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
     "@storybook/addon-essentials": "^7.4.0",
     "@storybook/addon-interactions": "^7.4.0",
     "@storybook/addon-links": "^7.4.0",
@@ -40,8 +41,10 @@
     "@storybook/react": "^7.4.0",
     "@storybook/testing-library": "^0.2.0",
     "@svgr/webpack": "^8.1.0",
+    "@testing-library/cypress": "^10.0.1",
     "@testing-library/react": "^14.0.0",
-    "cypress": "^13.1.0",
+    "cypress": "^13.6.0",
+    "cypress-forced-colors": "^1.0.2",
     "eslint-plugin-storybook": "^0.6.13",
     "storybook": "^7.4.0",
     "storybook-addon-css-user-preferences": "^0.0.3"

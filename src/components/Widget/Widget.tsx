@@ -4,7 +4,7 @@ export function Widget() {
     return (
         <section className="w-[448px] rounded overflow-hidden">
             <div className="bg-zinc-800 py-4 px-6 flex items-center justify-between">
-                <span className="font-bold">Notividações</span>
+                <span className="font-bold text-white">Notividações</span>
                 <button className="text-violet-500 font-bold text-xs hover:text-violet-400">MARCAR TODAS COM VISITADAS</button>
             </div>
 
